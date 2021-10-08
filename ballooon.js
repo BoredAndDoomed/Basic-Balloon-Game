@@ -83,7 +83,7 @@ function draw() {
   /*Uncomment correct statement so that 
   game goes to "END" state 
   when red balloon is hit*/
-  //if (arrowGroup.isTouching(redB)) 
+  if (arrowGroup.isTouching(redB)) 
   //if (arrowGroup.Collide(redB)) 
   //if (arrowGroup.isCollide(redB)) 
   if(frameCount>700)//comment this line after selecting the solution
@@ -121,12 +121,6 @@ by the arrows */
   score=score+1;
 }
 
-
-//  if (arrowGroup.isTouching(blueB)) {
-//  arrowGroup.destroyEach();
-//  blueB.destroyEach();
-//  score=score+1;
-//  }
 
 
 if (arrowGroup.isTouching(pinkB)) {
